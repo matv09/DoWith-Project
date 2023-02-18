@@ -3,7 +3,7 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `DoWith-Project`,
+    title: `DoWith-Projectt`,
     siteUrl: `https://www.yourdomain.tld`,
   },
   plugins: [],
