@@ -1,0 +1,228 @@
+.blurry-gradient {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1500px;
+    height: 1500px;
+    z-index: -999;
+    filter: blur(1px);
+  }
+
+  .blurry-gradient-bottom {
+    position: absolute;
+    top: 100;
+    left: 0;
+    width: 1000px;
+    height: 1000px;
+    z-index: 99;
+    filter: blur(4px);
+  }
+
+  
+
+.header {
+    display: flex;
+
+
+    .header-content {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-right: 5rem;
+
+        h1 {
+            font-weight: bold;
+            font-size: 80px;
+            line-height: 110%;
+            color: #192252;
+        }
+
+        p {
+            font-weight: medium;
+            font-size: 18px;
+            line-height: 150%;
+            color: #848FAC;
+            margin-top: 2.5rem;
+        }
+
+        .header-buttons {
+            margin-top: 2.5rem;
+            display: flex;
+            gap: 20px;
+            z-index: 950;
+            
+        }
+        .header-buttons button {
+            min-width: 200px;
+            height: 64px;
+            border-radius: 8px;
+        }
+    }
+
+    .header-image {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+}
+
+
+
+
+  .header-image-container {
+
+    .moneyTransfer {
+        position: absolute;
+        top: 60px;
+        left: 0px;
+        padding: 0;
+        width: 278px;
+        height: 72px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+            animation: MoveUpDown 1.5s linear infinite;
+        }
+
+
+        .moneyTransfer-content {
+            width: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+        }
+    }
+
+    .totalAmmount {
+        position: absolute;
+        top: 150px;
+        left: 40px;
+        padding: 15px 25px;
+        width: 261px;
+        height: 95px; 
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+
+        &:hover {
+            animation: MoveUpDown 1.5s linear infinite;
+        }
+
+        h6 {
+            font-size: 14px;
+            font-weight: medium;
+        }
+
+        .totalAmmount-content {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 12px;
+            
+
+
+            p {
+                font-size: 28px;
+                font-weight: bold;
+                span {
+                    color: #192252;
+                    
+                }
+            }
+        }
+        
+    }
+
+    .trending {
+        position: absolute;
+        top: 200px;
+        right: 110px;
+        width: 190px;
+        height: 116px;
+        padding: 10px 20px;
+        display: flex;
+        flex-direction: column;
+
+        &:hover {
+            animation: MoveUpDown 1.5s linear infinite;
+        }
+
+
+        h6 {
+            font-size: 14px;
+            font-weight: medium;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 24px;
+            font-weight: bold;
+            color: #192252;
+        }
+
+        .trendingInfo {
+            display: flex;
+            background: rgba(39,174,96,0.1);
+            padding: 5px 10px;
+            border-radius: 20px;
+            gap: 5px;
+
+            margin-top: 10px;
+
+            p {
+                font-size: 12px;
+                color: #27AE60;
+                
+            }
+        }
+        
+    }
+
+    .infoIcon {
+        position: absolute;
+        top: 100px;
+        right: 260px;
+        background: #6345D5;
+        min-width: 72px;
+        height: 72px;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+            animation: MoveUpDown 1.5s linear infinite;
+        }
+    }
+
+    .upgradeInfo  {
+        position: absolute;
+        top: 340px;
+        right: 190px;
+        width: 154px;
+        height: 56px;
+        color: #FC9770 !important;
+        animation: MoveUpDown 2s linear infinite;
+
+    }
+  }
+
+  @keyframes MoveUpDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+
+  

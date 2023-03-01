@@ -3,8 +3,14 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `DoWith-Projectt`,
+    title: `DoWith-Project`,
     siteUrl: `https://www.yourdomain.tld`,
   },
-  plugins: [],
+  plugins: [
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
+    "gatsby-plugin-mdx",
+    "gatsby-plugin-sass",
+    "gatsby-plugin-styled-components",
+  ],
 }

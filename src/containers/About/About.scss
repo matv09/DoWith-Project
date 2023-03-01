@@ -1,0 +1,39 @@
+.aboutContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    gap: 10rem;
+    .aboutVideoContainer {
+        position: relative;
+        top: 0;
+        left: 0;
+
+        .frame {
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+
+        .playButton {
+            position: absolute;
+            top: 40%;
+            right: 40%;
+        }
+    }
+
+    .aboutContent {
+        h3 {
+            font-size: 52px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            color: #848FAC;
+            
+        }
+
+       
+    }
+}

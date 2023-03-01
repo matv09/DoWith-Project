@@ -1,0 +1,133 @@
+.featureContainer {
+
+    &.section__paddings {
+        padding: 5rem 7rem 0rem 7rem;
+    }
+    background: #201353;
+
+
+    .featureHeading-text {
+        display: flex;
+        justify-content: space-between;
+       
+       
+
+        h3 {
+            font-size: 52px;
+            color: #fff;
+            font-weight: bold;
+        }
+        p {
+            color: #fff;
+            opacity: 0.64;
+            line-height: 1.5rem;
+            font-size: 18px;
+          }
+    }
+
+    .featuresContentContainer {
+        display: flex;
+        justify-content: space-between;
+        
+        .featureImage {
+            display: grid;
+            width: 100%;
+            align-items: end;
+            justify-items: center;
+        
+
+            .circles,
+            .foto {
+                grid-column: 1;
+                grid-row: 1;
+            }
+
+            .foto {
+                z-index: 999;
+            }
+           
+            .circles {
+                
+                .circle {
+                    position: relative;
+                    width: 800px;
+                    height: 800px;
+                    border: 5px solid rgba(255,255,255,0.08);
+
+                    &.circle,
+                    &.circle:before,
+                    &.circle:after {
+                        -moz-border-radius: 100%; 
+                        -webkit-border-radius: 100%; 
+                        border-radius: 100%;
+                    }
+
+                    &.circle:before,
+                    &.circle:after {
+                        content: '';
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        -webkit-transform-origin: center center;
+                        -webkit-transform: translate(-50%, -50%);
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &.circle:before {
+                        width: 75%;
+                        height: 75%;
+                        border: 5px solid rgba(255,255,255,0.08); 
+                    }
+
+                    &.circle:after {
+                        width: 50%;
+                        height: 50%;
+                        border: 5px solid rgba(255,255,255,0.08); 
+                    }
+
+                    .circleIcons {
+                        .circleIcons1 {
+                            position: absolute;
+                            top: 60px;
+                            right: 48%;
+                        }
+                        .circleIcons2 {
+                            position: absolute;
+                            top: 60px;
+                            left: 15%;
+                        }
+                        .circleIcons3 {
+                            position: absolute;
+                            top: 20%;
+                            left: 0%;
+                        }
+                        .circleIcons4 {
+                            position: absolute;
+                            top: 50%;
+                            left: 9%;
+                        }
+                        .circleIcons5 {
+                            position: absolute;
+                            top: 0;
+                            right: 30%;
+                        }
+                        .circleIcons6 {
+                            position: absolute;
+                            top: 20%;
+                            right: 0;
+                        }
+                        .circleIcons7 {
+                            position: absolute;
+                            top: 50%;
+                            right: 8%;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+
+
+}
+

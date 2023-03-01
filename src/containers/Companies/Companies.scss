@@ -1,0 +1,19 @@
+.companiesContainer {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h3 {
+        color: #848FAC;
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    .companiesLogos {
+        padding: 50px 0;
+        display: flex;
+        gap: 120px;
+    }
+}
